@@ -1,0 +1,120 @@
+body{
+    display: grid;
+    place-items: center;
+    margin-top: 30px; 
+    background: linear-gradient(135deg, #000000, #383838, #4b4b4b, #616161, #6e6c5d, #837a51, #837226, #775f0f);
+    min-height: 100vh;
+} 
+
+#box{
+    width: 390px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    background: rgba(241, 226, 141, 0.377);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(250px);
+    padding-bottom: 50px;
+    border: 0px solid rgba(250, 225, 1, 0.274);
+    box-shadow: 0 8px 32px 0 rgba(173, 162, 1, 0);
+    text-overflow: clip;
+    height: 700px
+}   
+
+header{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    /* padding: 10px; */
+    padding-top: -30px;
+    padding-bottom: 60px;
+    max-height: 76px;
+    
+}
+
+.caption{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: rgba(255, 246, 161, 0.253) 1px 3px;
+    margin-top: 1pxpx;
+}
+
+#input{
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    /* padding: 15px; */
+    /* border: 1px black solid; */
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+
+.value{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+button{
+    font-size: 25px;
+    border-radius: 10px;
+    border-width: 6px;
+    border-color: #504f4f93 #ce9700 #c5a800 #6d6d6d59;
+}
+
+#submit{
+    background: linear-gradient(215deg, grey, rgb(255, 218, 5));
+    transition: ease-out;
+    margin-top: -10px;
+    
+}
+
+#reset{
+    background-color: #000000;
+    color: gold;
+    margin-right: 20px;
+}
+
+#decrease{
+    background-color: rgb(78, 1, 1);
+    color: whitesmoke;
+    margin-left: 20px;
+}
+
+button:hover{
+    font-size: xx-large;
+    background-color: white;
+    
+}
+
+#saving{
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+@media (max-width: 450px){
+    #box{
+        width: 350px;
+        height: 750px;
+        
+    }
+    header{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 390px){
+    #box{
+        width: 300px;
+        height: 700px;
+        padding: 5px;
+        font-size: 3px;
+    }
+    header{
+        font-size: 20px;
+    }
+    .value{
+        font-size: 35px;
+    }
+}
